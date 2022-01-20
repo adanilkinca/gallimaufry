@@ -1,0 +1,34 @@
+#first calculator v1.2 (color)
+
+from colorama import init
+from colorama import Fore, Back, Style
+# use Colorama to make Termcolor work on Windows too
+init()
+print(Back.CYAN)
+print(Style.DIM)
+print(Fore.BLACK)
+aim = input ('enter, what do you want from me, sucker. I can: +, -, * or /. So, choose your destiny: ')
+
+print(Back.MAGENTA)
+a = float (input ('ok, I see...Therefore, enter the first number: '))
+b=float (input ('then the second: '))
+
+print(Style.BRIGHT)
+print(Back.BLUE)
+if aim == '+':
+	c = a+b
+	d = str(a) + str(b)
+	print('ok, man, the summary is ' +str(d))
+	print ('hm...you caught me, the right summary result is ' +str(c))
+elif aim == '-':
+	c = a-b
+	print('ok, sister, the subtraction result is ' +str(c))
+elif aim == '*':
+	c = a*b
+	print('ok, boogyman, the multiplication result is ' +str(c))
+elif aim == '/':
+	c = a/b
+	print('ok, cool, the division result is ' +str(c))
+else:
+	print('nothing correct has been entered')
+input()
